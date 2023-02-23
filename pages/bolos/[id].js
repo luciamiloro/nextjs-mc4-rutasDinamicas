@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Head from 'next/head'
 
 // TODO: Need to fetch `posts` (by calling some API endpoint)
 //       before this page can be pre-rendered.
@@ -16,8 +17,8 @@ export default function Bolos({post}) {
         <Image 
           src={post.image} 
           alt={post.title}
-          width={100} 
-          height={100} />
+          width={400} 
+          height={300} />
         <h4>{post.description}</h4>
         <p>{post.text}</p>
     </>

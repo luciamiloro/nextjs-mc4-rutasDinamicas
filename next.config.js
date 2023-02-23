@@ -5,13 +5,6 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'www.receiteria.com.br',
-        port: '',
-        pathname: '/wp-content/uploads**',
+        domains: ['www.receiteria.com.br'],
       },
-    ],
-  },
-}
+  }
